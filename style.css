@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F73D93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex: 1;
+    /* Hace que el contenido ocupe todo el espacio disponible */
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: #413F42;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-pane-container {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 41.3%;
+    width: 25%;
+    z-index: 2;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #ffffff;
+}
+
+.header-pane {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-color: #F73D93;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.imagen {
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('imagen1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.info {
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.hr-info {
+    height: 0.3rem;
+    width: 90%;
+    background-color: #F73D93;
+    border: none;
+    border-radius: 0.5rem;
+    margin: auto;
+}
+
+.content {
+    flex: 3;
+    flex: 0 0 60%;
+    padding: 3rem;
+    border-top: 0.5rem solid #ffffff;
+    color: #ffffff;
+    background-color: #F73D93;
+}
+
+.parrafo {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.parrafo h3 {
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.parrafo .datos-perfil {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.imagen-izquierda {
+    width: 30%;
+    float: left;
+    margin-right: 1rem;
+    background: url('imagen2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+footer {
+    flex: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Ancho completo */
+    background-color: #7F8487;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.redes {
+    font-weight: 700;
+}
+
+.redes a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
